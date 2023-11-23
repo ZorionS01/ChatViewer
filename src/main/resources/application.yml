@@ -77,15 +77,7 @@ mybatis-plus:
 mybatis:
   # 设置mapper.xml文件文职
   mapper-locations: classpath:mapper/*.xml
-my-conf:
-  # 第三方服务设置
-  gpt-key: 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
-  ali-key: LTAI5tGGPbugzukLhFQJDe5J
-  ali-secret: amhlIgmBf7cnbA3OmetirNjKno9U6y
-  sign-name: xiaosong学习
-  template-code: SMS_463687413
-  oss-end-point: oss-cn-hangzhou.aliyuncs.com
-  oss-bucket:  chatlbloglocal
+
 #my-conf:
   # 第三方服务设置
   #gpt-key: GPT的APIKey，从OpenAI官网获取，如sk-xxxxxxxxx
