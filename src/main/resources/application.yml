@@ -86,3 +86,12 @@ my-conf:
   template-code: SMS_463687413
   oss-end-point: oss-cn-hangzhou.aliyuncs.com
   oss-bucket:  chatlbloglocal
+#my-conf:
+  # 第三方服务设置
+  #gpt-key: GPT的APIKey，从OpenAI官网获取，如sk-xxxxxxxxx
+  #ali-key: 阿里云的accessKey
+  #ali-secret: 阿里云的secretKey
+  #sign-name: 阿里云短信模板名称
+  #template-code: 阿里云短信模板代码，如SM-xxxxxxxx
+  #oss-end-point: 阿里云OSS的end-point，如oss-cn-beijing.aliyuncs.com
+  #oss-bucket:  阿里云OSS的bucket-name，如upload-bucket
