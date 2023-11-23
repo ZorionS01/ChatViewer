@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.szw.chatblog.mapper.ConversationMapper">
+
+    <select id="conversationsOf" resultType="com.szw.chatblog.dto.ConversationDto">
+        SELECT cm.conversation_id, cm.content AS first_message
+        FROM (SELECT conversation_id, MIN(message_id) AS min_message_id
+              FROM blog_chatgpt_message
+              GROUP BY conversation_id) AS min_messages
+                 INNER JOIN blog_chatgpt_message cm
+                            ON min_messages.conversation_id = cm.conversation_id AND
+                               min_messages.min_message_id = cm.message_id
+        WHERE cm.conversation_id IN (SELECT conversation_id
+                                     FROM blog_conversation
+                                     WHERE user_id = #{user_id})
+        ORDER BY cm.conversation_id DESC;
+    </select>
+
+</mapper>
