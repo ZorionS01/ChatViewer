@@ -1,14 +1,16 @@
 package com.szw.chatblog.service.impl;
 
 import com.alibaba.fastjson.JSONObject;
+
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.chatviewer.blog.mapper.CommodityMapper;
-import com.chatviewer.blog.mapper.OrderMapper;
-import com.chatviewer.blog.pojo.Commodity;
-import com.chatviewer.blog.pojo.Event;
-import com.chatviewer.blog.service.CommodityService;
-import com.chatviewer.blog.utils.ContextHolderUtil;
+import com.szw.chatblog.mapper.CommodityMapper;
+import com.szw.chatblog.mapper.OrderMapper;
+import com.szw.chatblog.pojo.Commodity;
+import com.szw.chatblog.pojo.Event;
+import com.szw.chatblog.service.CommodityService;
+import com.szw.chatblog.utils.ContextHolderUtil;
 import lombok.extern.slf4j.Slf4j;
+
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -24,8 +26,10 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
-import static com.chatviewer.blog.constant.RedisConstant.*;
-import static com.chatviewer.blog.utils.ThreadPoolUtil.pool;
+
+import static com.szw.chatblog.constant.RedisConstant.*;
+import static com.szw.chatblog.utils.ThreadPoolUtil.pool;
+
 
 /**
  * @author ChatViewer

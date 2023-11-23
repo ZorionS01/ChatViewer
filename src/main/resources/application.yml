@@ -32,8 +32,8 @@ spring:
     password: szw123
     rabbitmq:
       addresses: 127.0.0.1:5672
-      username: yourRabbitmqUsername
-      password: yourPassword
+      username: rabbitmq_szw
+      password: szw123
       virtual-host: /
   kafka:
     bootstrap-servers: 127.0.0.1:9092 # kafka集群信息，多个用逗号间隔
@@ -82,6 +82,7 @@ mybatis-plus:
 mybatis:
   # 设置mapper.xml文件文职
   mapper-locations: classpath:mapper/*.xml
+
 
 #my-conf:
   # 第三方服务设置

@@ -1,7 +1,8 @@
 package com.szw.chatblog.mapper;
 
+
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.chatviewer.blog.pojo.Commodity;
+import com.szw.chatblog.pojo.Commodity;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

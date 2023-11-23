@@ -1,8 +1,9 @@
 package com.szw.chatblog.controller;
 
-import com.chatviewer.blog.base.Result;
-import com.chatviewer.blog.pojo.Commodity;
-import com.chatviewer.blog.service.CommodityService;
+
+import com.szw.chatblog.base.Result;
+import com.szw.chatblog.pojo.Commodity;
+import com.szw.chatblog.service.CommodityService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;

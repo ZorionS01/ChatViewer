@@ -1,7 +1,8 @@
 package com.szw.chatblog.service;
 
+
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.chatviewer.blog.pojo.Commodity;
+import com.szw.chatblog.pojo.Commodity;
 
 /**
  * @author ChatViewer
